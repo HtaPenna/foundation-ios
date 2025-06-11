@@ -10,3 +10,11 @@ class Quadrado {
     return area
   }
 }
+
+print("Digite o valor do lado:")
+if let lado = readLine(){
+  if let lado = Double(lado){
+    let quadrado = Quadrado(lado: lado)
+    print(quadrado.area())
+  }
+}
